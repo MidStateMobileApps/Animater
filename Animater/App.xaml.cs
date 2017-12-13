@@ -4,8 +4,8 @@ namespace Animater
 {
     public partial class App : Application
     {
-        static public int ScreenHeight;
-        static public int ScreenWidth;
+        public static int ScreenHeight { get; set; }
+        static public int ScreenWidth { get; set; }
 
         public App()
         {

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectGuid>{B5D11622-E65A-4218-AE1C-452723EA7643}</ProjectGuid>
+    <ProjectGuid>{CE30414D-E4AB-442B-99AC-7DF597131F70}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>Animater.iOS</RootNamespace>
@@ -23,7 +23,7 @@
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
-    <IOSDebuggerPort>24999</IOSDebuggerPort>
+    <IOSDebuggerPort>14198</IOSDebuggerPort>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
@@ -71,7 +71,7 @@
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <IOSDebuggerPort>13189</IOSDebuggerPort>
+    <IOSDebuggerPort>52946</IOSDebuggerPort>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
@@ -112,11 +112,10 @@
     <Reference Include="CocosSharp.Forms">
       <HintPath>..\packages\CocosSharp.Forms.1.7.1.0\lib\Xamarin.iOS10\CocosSharp.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="OpenTK-1.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Animater\Animater.csproj">
-      <Project>{F96B7B03-BCCA-47C3-BB69-5BD4BD1A8DC5}</Project>
+      <Project>{42356A54-04E8-41B9-9BD3-EBFE258AF963}</Project>
       <Name>Animater</Name>
     </ProjectReference>
   </ItemGroup>
@@ -126,6 +125,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -139,6 +140,10 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Content\Images\bullet.png" />
+    <BundleResource Include="Content\Images\ship.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />

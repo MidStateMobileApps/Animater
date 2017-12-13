@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Animater.GamePage">
 	<ContentPage.Content>
         <StackLayout BackgroundColor="Black" Padding="20" x:Name="mainLayout" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Label FontSize="32" TextColor="White" HorizontalTextAlignment="Center" Text="Let's play a game!"></Label>
+            <Label FontSize="32" TextColor="White" HorizontalTextAlignment="Center" Text="Let's play a game"></Label>
         </StackLayout>
-	</ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

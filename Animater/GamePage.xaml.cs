@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using CocosSharp;
+
+
 using Xamarin.Forms;
 
 namespace Animater
@@ -17,22 +19,25 @@ namespace Animater
             {
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                ViewCreated = HandleEventHandler
+                ViewCreated = HandleViewCreated
             };
             mainLayout.Children.Add(gameView);
         }
 
-        void HandleEventHandler(object sender, EventArgs e)
+        private void HandleViewCreated(object sender, EventArgs e)
         {
             var gameView = sender as CCGameView;
-            if (gameView != null)
+            var searchPaths = new List<string> { "Images" };
+            if ( gameView != null)
             {
-                gameView.DesignResolution = new CCSizeI(App.ScreenWidth, App.ScreenHeight);
-                // GameScene is the root of the CocosSharp rendering hierarchy:
+                gameView.ContentManager.SearchPaths = searchPaths;
+
+                gameView.DesignResolution =
+                    new CCSizeI(App.ScreenWidth, App.ScreenHeight);
                 gameScene = new GameScene(gameView);
-                // Starts CocosSharp:
-                gameView.RunWithScene(gameScene);
+                gameView.RunWithScene(gameScene);                          
             }
+
         }
     }
 }

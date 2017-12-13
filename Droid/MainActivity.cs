@@ -22,17 +22,7 @@ namespace Animater.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            var metrics = Resources.DisplayMetrics;
-            var widthInDp = ConvertPixelsToDp(metrics.WidthPixels);
-            var heightInDp = ConvertPixelsToDp(metrics.HeightPixels);
-
             LoadApplication(new App());
-        }
-
-        public int ConvertPixelsToDp(float pixelValue)
-        {
-            var dp = (int)((pixelValue) / Resources.DisplayMetrics.Density);
-            return dp;
         }
     }
 }

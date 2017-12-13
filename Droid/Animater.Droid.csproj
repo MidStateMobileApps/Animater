@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95B2666F-CFD2-4704-8279-64F2A4543072}</ProjectGuid>
+    <ProjectGuid>{A4425328-32FA-45F4-B983-AD6E66BC8029}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>Animater.Droid</RootNamespace>
@@ -106,26 +106,10 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="CocosSharp">
-      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\CocosSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Lidgren.Network">
-      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\Lidgren.Network.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoGame.Framework">
-      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\MonoGame.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="box2d">
-      <HintPath>..\packages\CocosSharp.Forms.1.7.1.0\lib\MonoAndroid10\box2d.dll</HintPath>
-    </Reference>
-    <Reference Include="CocosSharp.Forms">
-      <HintPath>..\packages\CocosSharp.Forms.1.7.1.0\lib\MonoAndroid10\CocosSharp.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenTK-1.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Animater\Animater.csproj">
-      <Project>{F96B7B03-BCCA-47C3-BB69-5BD4BD1A8DC5}</Project>
+      <Project>{42356A54-04E8-41B9-9BD3-EBFE258AF963}</Project>
       <Name>Animater</Name>
     </ProjectReference>
   </ItemGroup>
@@ -139,7 +123,6 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
-    <None Include="OpenTK.dll.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />

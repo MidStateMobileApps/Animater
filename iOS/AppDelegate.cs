@@ -14,8 +14,8 @@ namespace Animater.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            App.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
             App.ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
+            App.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
 
             LoadApplication(new App());
 
